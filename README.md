@@ -104,3 +104,24 @@ Precision: Modelin doğru tahmin yapma oranı.
 Recall: Modelin sınıfları doğru şekilde tanıyıp tanımadığı.
 F1-Score: Precision ve Recall arasında denge kuran bir ölçüt.
 Support: Test veri kümesindeki her sınıfın örnek sayısı.
+
+                                        MODELİ TEST ETTİĞİMİZ BÖLÜM
+
+
+![image](https://github.com/user-attachments/assets/1ce3f6f2-8dc1-4525-bbdc-539609cce58b)
+
+![image](https://github.com/user-attachments/assets/3794294d-dbee-4496-ab72-e8cf4dc9df60)
+Gerekli kütüphaneler import ediliyor ve daha sonra model yüklenme işlemi yapılıyor.
+
+![image](https://github.com/user-attachments/assets/36570b83-e3a2-43fb-8085-570bec78875b)
+
+![image](https://github.com/user-attachments/assets/bd56237e-7f81-421d-a194-4af0e4390a81)
+
+![image](https://github.com/user-attachments/assets/1124b46f-b4e9-441e-912b-55b127196dd5)
+Görüntüyü uygun boyuta getirerek  (128,128)ve bunu numpy dizisine dönüştürerek, birden fazla görüntünün toplu işleme ile kullanarak (batch processing) model uygun formata getiriliyor. Daha sonra modelden sınıflandırma tahminleri alıyoruz ve modelin tahmin ettiği en yüksek olasılıklı sınıf belirleniyor.
+
+![image](https://github.com/user-attachments/assets/26f4d81e-7c9c-4af2-ba97-46b4bbada1b7)
+En yüksek olasılıklı tahmin edilen sınıfı buluyoruz. Modelin test aşaması gösterilmiştir.
+
+![image](https://github.com/user-attachments/assets/7121135c-5a92-4e59-ab9a-cf0c98963be3)
+
